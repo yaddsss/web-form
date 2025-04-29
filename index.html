@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Participant Information Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>Demographic Questions</h2>
+  <form id="participant-form">
+    <label>Name (Optional):</label>
+    <input type="text" name="Name"><br>
+  
+    <label>Age Group:</label>
+    <select name="Age" required> <!-- Renamed to Age -->
+      <option value="">Select</option>
+      <option value="Under 25">Under 25</option>
+      <option value="25–34">25–34</option>
+      <option value="35–44">35–44</option>
+      <option value="45 and above">45 and above</option>
+    </select><br>
+  
+    <label>Gender:</label>
+    <select name="Gender" required>
+      <option value="">Select</option>
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+      <option value="Prefer not to say">Prefer not to say</option>
+    </select><br>
+  
+    <label>Highest Qualification:</label>
+    <select name="Qualification" required> <!-- Renamed to Qualification -->
+      <option value="">Select</option>
+      <option value="High School or below">High School or below</option>
+      <option value="Bachelor's Degree">Bachelor's Degree</option>
+      <option value="Postgraduate Degree">Postgraduate Degree</option>
+    </select><br>
+  
+    <label>Specialization:</label>
+    <input type="text" name="Specialization" required><br>
+  
+    <label>Years of Experience:</label>
+    <select name="ExperienceYears" required>
+      <option value="">Select</option>
+      <option value="Less than 1 year">Less than 1 year</option>
+      <option value="1–3 years">1–3 years</option>
+      <option value="4–7 years">4–7 years</option>
+      <option value="Over 7 years">Over 7 years</option>
+    </select><br>
+  
+    <label>Language:</label>
+    <select name="Language" required>
+      <option value="">Select</option>
+      <option value="Arabic">Arabic</option>
+      <option value="English">English</option>
+      <option value="Other">Other</option>
+    </select><br>
+  
+    <label>Need Explanation:</label> <!-- Changed -->
+    <select name="NeedExplanation" required>
+      <option value="">Select</option>
+      <option value="Yes">Yes</option>
+      <option value="No">No</option>
+    </select><br>
+  
+    <label>Motivation Type:</label>
+    <select name="MotivationType" required>
+      <option value="">Select</option>
+      <option value="Reward">Reward</option>
+      <option value="Recognition">Recognition</option>
+      <option value="Challenge">Challenge</option>
+      <option value="Team Interaction">Team Interaction</option>
+    </select><br>
+  
+    <label>Learning Style:</label>
+    <select name="LearningStyle" required>
+      <option value="">Select</option>
+      <option value="Observation">Observation</option>
+      <option value="Hands-on Practice">Hands-on Practice</option>
+      <option value="Inquiry">Inquiry</option>
+    </select><br>
+  
+    <label>Team Role:</label>
+    <select name="TeamRole" required>
+      <option value="">Select</option>
+      <option value="Leader">Leader</option>
+      <option value="Collaborator">Collaborator</option>
+      <option value="Isolated/Worked Alone">Isolated/Worked Alone</option>
+    </select><br>
+  
+    <label>Problem Solving:</label>
+    <select name="ProblemSolving" required>
+      <option value="">Select</option>
+      <option value="Innovated solutions creatively">Innovated solutions creatively</option>
+      <option value="Waited for instructions from others">Waited for instructions from others</option>
+      <option value="Ignored problems or withdrew">Ignored problems or withdrew</option>
+    </select><br>
+  
+    <label>Creativity:</label>
+    <select name="Creativity" required>
+      <option value="">Select</option>
+      <option value="Yes">Yes</option>
+      <option value="No">No</option>
+    </select><br>
+  
+    <label>Perseverance:</label> <!-- Changed -->
+    <select name="Perseverance" required>
+      <option value="">Select</option>
+      <option value="Yes">Yes</option>
+      <option value="No">No</option>
+    </select><br>
+  
+    <label>Independence:</label>
+    <select name="Independence" required>
+      <option value="">Select</option>
+      <option value="Independent">Independent</option>
+      <option value="Moderate support needed">Moderate support needed</option>
+      <option value="High support needed">High support needed</option>
+    </select><br>
+  
+    <label>Flexibility:</label> <!-- Changed -->
+    <select name="Flexibility" required>
+      <option value="">Select</option>
+      <option value="Adapted quickly">Adapted quickly</option>
+      <option value="Slightly hesitant but adapted">Slightly hesitant but adapted</option>
+      <option value="Resisted the change">Resisted the change</option>
+    </select><br>
+  
+    <label>Communication (1=Poor, 5=Excellent):</label>
+    <input type="number" name="CommunicationSkills" min="1" max="5" required><br>
+  
+    <button type="submit">Submit</button>
+  </form>
+  
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
