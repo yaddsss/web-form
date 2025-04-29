@@ -6,18 +6,15 @@ form.addEventListener('submit', async (e) => {
   const data = Object.fromEntries(formData.entries());
 
   try {
-    const response = await fetch('https://script.google.com/macros/s/AKfycbzL8ZZjPYgDiNpTFWiqxaNNFUlx9CuUODorH4OUPxwnCTpd6e2w2dk8cpQMF3dz8BvFkw/exec', {
+    await fetch('https://script.google.com/macros/s/AKfycbzL8ZZjPYgDiNpTFWiqxaNNFUlx9CuUODorH4OUPxwnCTpd6e2w2dk8cpQMF3dz8BvFkw/exec', {
       method: 'POST',
-      body: JSON.stringify(data),
-      headers: { 'Content-Type': 'application/json' },
+      mode: 'no-cors', // ADD THIS
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
     });
-
-    if (response.ok) {
-      alert('Thank you for your submission!');
-      form.reset();
-    } else {
-      alert('Failed to submit. Please try again.');
-    }
+  
   } catch (error) {
     alert('Error: ' + error.message);
     console.error('Error details:', error);
